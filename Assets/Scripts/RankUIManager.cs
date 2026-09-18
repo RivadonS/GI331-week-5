@@ -40,7 +40,7 @@ public class RankUIManager : MonoBehaviour
         for(int i = 0; i < sortRankPlayer.Count;i++ )
         {
             PlayerData changedRankNum = sortRankPlayer[i];
-            changedRankNum.rankNumber += 1;
+            changedRankNum.rankNumber = i+1;
 
             sortRankPlayer[i] = changedRankNum;
         }
